@@ -33,3 +33,15 @@ You have installed an app called pgAdmin 4 as part of step 1. Find it and launch
 * Now you should see that you have (at least) one database in the Postgres 13 server called `postgres`
 
 You're now connected as the superuser and you can create more databases, query those databases, and more from here.
+
+## Step 3: Create Our First Database
+
+* Right click on the "databases" underneath the Postgres 13 server and select `create > database`
+* Name it `soccer` and make the owner the `postgres` user.
+* Click save.
+* It should appear in your list on the left hand panel
+* Right click it and select `query tool`
+
+## Step 4: Add tables and begin querying!
+
+* We will do this by walking through the slideshow materials in the slides folder.

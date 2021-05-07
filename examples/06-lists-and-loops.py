@@ -83,13 +83,3 @@ print("\n", new_list, len(new_list))
 
 # Micro-Exercise: append three more values to new_list, then loop
 # over those values printing the value AND type of each item in new_list.
-new_list = []
-new_list.append('hello')
-new_list.append('good')
-new_list.append('people')
-new_list.append('lets')
-new_list.append(1)
-new_list.append(2)
-
-for thing in new_list:
-    print(f"{thing} is type {type(thing)}")

@@ -40,10 +40,3 @@ for key, value in key_examples.items():
 # "Ghastly Business". Write a line of code that accesses that value,
 # stores it into a variable, and then prints the value of that variable
 # to the console. You should use "bracket notation" or the .get function
-key_examples = {
-    "tyler": 75,
-    1: "24",
-    None: [1, 2, 3, 'Ghastly Business']
-}
-
-print(key_examples[None][3])

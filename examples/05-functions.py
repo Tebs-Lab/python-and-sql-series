@@ -39,9 +39,3 @@ print(q)
 # accepts 3 parameters, uses math operators to combine them
 # and returns the result of that math. The result should also
 # be a number.
-def fancy_math(x, y, z):  
-    return x + y + z
-    
-l = fancy_math(1,2,3)
-print(fancy_math(1,2,3))
-print(l)

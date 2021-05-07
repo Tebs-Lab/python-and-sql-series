@@ -46,7 +46,4 @@ print(type(text))
 # it to have the same value as the variable you created.
 # Finally, prove your code works with a print statement.
 
-print("the value of x is: ", x)
-print("the value of x is: " + str(x))
-print(f'the value of x plus 10 is: {x + 10}')
 

@@ -47,11 +47,4 @@ if arbitrary_number < 10 or arbitrary_number > 30:
 # to become half as large if it's greater than 100, and twice
 # as large if it's less than 100. Print the variable's value 
 # after the if/else block and test that your code works.
-a = 101
 
-if a > 100:
-    a /= 2
-elif a < 100:
-    a *= 2
-
-print(a)

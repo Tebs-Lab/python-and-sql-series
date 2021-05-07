@@ -53,4 +53,3 @@ x /= 4 #  x = x / 4
 
 # Micro-Exercise: predict the value of x. Then write a comparison statement 
 # involving x that evaluates to False. Print the result of that comparison.
-print('x is not equal to 2, but equal to 3', 2 == x)

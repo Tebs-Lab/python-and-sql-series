@@ -131,3 +131,9 @@ INSERT INTO au_orders VALUES('T10','A02',NULL,NULL);
 INSERT INTO au_orders VALUES('T11','A06','A03','A04');
 INSERT INTO au_orders VALUES('T12','A02',NULL,NULL);
 INSERT INTO au_orders VALUES('T13','A01',NULL,NULL);
+
+
+-- Mini-Exercise: Add one additional insert statement 
+-- for each of the tables above. You may pick any values
+-- you'd like for each field, but you'll have to satisfy
+-- all the constraints!

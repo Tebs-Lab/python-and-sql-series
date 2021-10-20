@@ -16,3 +16,13 @@ The order of the content is as follows:
     * After functions there is an exercise.
     * After pandas/matplotlib there is an exercise.
 4. Time permitting, have the students work on [this longer exercise](https://docs.google.com/document/d/1FVskrRMMz8qLCN1EJ4_yAQxGlVXu0ByA25jkVWWy-kE/edit#heading=h.ut50exrbqodb)
+
+## Installing Python Dependencies
+
+The minimal and simplest way to do this is:
+
+```
+pip install pandas numpy sqlalchemy psycopg2-binary jupyter matplotlib
+```
+
+Time permitting or depending on the students familiarity with the relevant topics, you may wish for them to create virtual environments.

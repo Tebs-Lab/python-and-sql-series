@@ -11,4 +11,8 @@ The order of the content is as follows:
 1. `examples/install_postgres.md`
 2. The slides, and the exercises associated with them.
 3. The remaining files in `examples` in order.
+    * After operators, there is an exercise.
+    * After dictionaries there is an exercise.
+    * After functions there is an exercise.
+    * After pandas/matplotlib there is an exercise.
 4. Time permitting, have the students work on [this longer exercise](https://docs.google.com/document/d/1FVskrRMMz8qLCN1EJ4_yAQxGlVXu0ByA25jkVWWy-kE/edit#heading=h.ut50exrbqodb)

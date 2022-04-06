@@ -56,25 +56,3 @@ Pro-tip, use the following code to "pretty print" the dictionary instead of the 
 from pprint import pprint
 pprint(dictionary_challenge)
 ```
-
-## Part 3: Comprehensions
-
-The following code creates a short list of words...
-
-```python
-words = [
-    'apple',
-    'soda',
-    'car',
-    'intrepid',
-    'water',
-    'buffalo',
-    'tepid',
-    'enemy',
-    'salvo'
-]
-```
-
-* Use a list comprehension to generate a list that has the same words, but in all capital letters.
-* Use a list comprehension to generate a list that only has the words which start with a vowel.
-* Use a dictionary comprehension to map the words (as keys) to the length of the word (as values)

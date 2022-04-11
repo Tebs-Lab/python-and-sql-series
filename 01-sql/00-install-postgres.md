@@ -37,11 +37,7 @@ You're now connected as the superuser and you can create more databases, query t
 ## Step 3: Create Our First Database
 
 * Right click on the "databases" underneath the Postgres 13 server and select `create > database`
-* Name it `soccer` and make the owner the `postgres` user.
+* Name it `test` and make the owner the `postgres` user.
 * Click save.
 * It should appear in your list on the left hand panel
 * Right click it and select `query tool`
-
-## Step 4: Add tables and begin querying!
-
-* We will do this by walking through the slideshow materials in the slides folder.

@@ -1,4 +1,5 @@
 import pandas as pd
+import sqlalchemy
 
 # Using a function called "main" as your code's "entry point"
 # is a conventional best practice.
@@ -48,6 +49,14 @@ def main():
 
     # Write
     sales_df.to_csv('nyc-property-data/transformed_nyc_housing.csv', index=False)
+
+    # NOTE: To do this you'll first need to create a database called nyc_housing in your local Postgres instance.
+    engine = sqlalchemy.create_engine('postgresql://postgres:postgres@localhost:5432/nyc_housing')
+    with engine.connect() as connection:
+        # If the table already exists with 'replace' we'll drop the table first.
+        # this will look for a table called "sales", create it if necessary, and upload our data.
+        # There are options for appending to a table or throwing an error when the table already exists.
+        sales_df.to_sql('sales', con=engine, if_exists='replace')
 
 
 # It's better to define functions at the top level, rather than as

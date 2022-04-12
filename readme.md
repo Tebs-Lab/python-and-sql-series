@@ -25,4 +25,4 @@ The minimal and simplest way to do this is:
 pip install pandas numpy sqlalchemy psycopg2-binary jupyter matplotlib
 ```
 
-Time permitting or depending on the students familiarity with the relevant topics, you may wish for them to create virtual environments.
+Time permitting or depending on the students familiarity with the relevant topics, you may wish for them to create virtual environments. A walkthrough on creating a virtual environment using Python 3.4+'s `venv` package is included in section `03-python-and-sql`

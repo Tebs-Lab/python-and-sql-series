@@ -43,6 +43,17 @@ SELECT
 FROM person.person
 limit 500;
 
+-- A note on datatypes: some operations might return a surprising result.
+SELECT 1/2; -- one divided by two returns zero?!
+SELECT 1.0/2.0; -- But this returns 0.5
+
+-- This is because "integer division" always truncates the result 
+-- by rounding down to a whole number (always DOWN, never up). 
+-- If you want to perform division with columns that have integer types,
+-- you need to cast at least one of them first:
+SELECT cast(1 as float) / 2;
+SELECT 1 / cast(2 as float);
+
 -- Micro-Exercise: Examine the table purchasing.purchaseorderdetail, then write a query that computes the following:
 --  * The initial price (combine unitprice and orderqty)
 --  * The rejection refund amount (combine rejectedqty and unitprice)

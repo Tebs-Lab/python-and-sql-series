@@ -1,6 +1,6 @@
 # ETL Exercise
 
-Perform a simulated ETL of the NYC housing data. Use your previously completed EDA of the data to decide how to transform the data. However, you should at minimum:
+Perform a simulated ETL of the NYC housing data. Spend some time performing an exploratory data analysis of the data to decide how to transform the data. Then, at minimum, you should at minimum:
 
 1. Create one new column based on values in one or more other columns.
 2. Drop some rows. Missing values are good candidates, so are outliers!

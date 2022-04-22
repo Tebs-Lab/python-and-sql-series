@@ -8,7 +8,7 @@ Write a SQL query for each of the following prompts.
 
 1. Select the full names of the people from `person.person` whose last name is longer than 10 characters.
 
-2. Select the `orderqty`, and `scrappedqty` from `production.workorder` and also compute the percent of the total order that was scarped for each order. Hint: if you forget to "cast" the input data, you might get an unexpected result.
+2. Select the `orderqty`, and `scrappedqty` from `production.workorder` and also compute the percent of the total order that was scrapped for each order. Hint: if you forget to "cast" the input data, you might get an unexpected result.
 
 3. Using the `-` operator, expand your answer from number 2 to include the number of days that elapsed between `startdate` and `enddate`.
 

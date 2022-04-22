@@ -43,14 +43,20 @@ Hint 2: the coalesce function might help as well: [https://www.postgresqltutoria
 Hint 3: You need to use a join, because some of the information you need is in the `person.stateprovince` table, and some more is in the `person.countryregion` table. Use joins!
 
 ```sql
-SELECT 
-  concat_ws(E'\n', 
-			a.addressline1,
-			a.addressline2, 
-			concat_ws(' ', a.city, sp.stateprovincecode, a.postalcode),
-			cr.name) as address
-FROM person.address a
-JOIN person.stateprovince sp on sp.stateprovinceid=a.stateprovinceid
-JOIN person.countryregion cr on cr.countryregioncode=sp.countryregioncode;
+SELECT
+concat_ws(E'\n',
+    concat_ws(' ', p.title, p.firstname, p.middlename, p.lastname, p.suffix),
+    a.addressline1,
+    a.addressline2,
+    concat_ws(' ', a.city || ',', sp.stateprovincecode, a.postalcode),
+    cr.name
+) AS "Full Address",
+at.name
+FROM person.person p
+join person.businessentityaddress bea on bea.businessentityid = p.businessentityid
+join person.address a on bea.addressid = a.addressid
+join person.stateprovince sp on sp.stateprovinceid = a.stateprovinceid
+join person.countryregion cr on cr.countryregioncode = sp.countryregioncode
+join person.addresstype at on at.addresstypeid = bea.addresstypeid;
 
 ```

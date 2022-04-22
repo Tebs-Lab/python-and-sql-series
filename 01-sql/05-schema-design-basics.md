@@ -20,7 +20,7 @@ Schema design is a topic of significant importance to database administrators. W
 ```sql
 CREATE TABLE review (
     review_id BIGSERIAL PRIMARY KEY,
-    book_id BIGSERIAL NOT NULL REFERENCES (book.book_id), -- REFERENCES enforces "referential integrity"
+    book_id BIGSERIAL NOT NULL REFERENCES book(book_id), -- REFERENCES enforces "referential integrity"
     rating INTEGER CHECK (rating >= 0 AND rating <= 10), -- Rating can only be whole numbers between 0 and 10.
     content text
 )
@@ -106,7 +106,7 @@ Find out what happens when you try to do the following two things:
 ```sql
 CREATE TABLE review_username (
     review_id BIGSERIAL PRIMARY KEY REFERENCES review(review_id),
-    text username
+    username text
 );
 
 

@@ -9,8 +9,8 @@ SELECT
   b.title, 
   a.name
 FROM book b
-JOIN book_author ba ON ba.book_id=b.book_id
-JOIN author a ON a.author_id=ba.author_id;
+LEFT JOIN book_author ba ON ba.book_id=b.book_id
+LEFT JOIN author a ON a.author_id=ba.author_id;
 ```
 
 2. Write a query that returns just the title of each book that does not have any reviews.

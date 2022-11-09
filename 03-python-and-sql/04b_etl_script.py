@@ -4,7 +4,7 @@ import sqlalchemy
 # Using a function called "main" as your code's "entry point"
 # is a conventional best practice.
 def main():
-    path_to_ny_sales = 'nyc-property-data/nyc-rolling-sales.csv'
+    path_to_ny_sales = 'nyc-property/nyc-rolling-sales.csv'
     sales_df = pd.read_csv(path_to_ny_sales)
 
     # Map the boroughs
@@ -48,7 +48,7 @@ def main():
     sales_df['BUILDING TYPE'] = sales_df.apply(check_building_type, axis=1) 
 
     # Write
-    sales_df.to_csv('nyc-property-data/transformed_nyc_housing.csv', index=False)
+    sales_df.to_csv('nyc-property/transformed_nyc_housing.csv', index=False)
 
     # NOTE: To do this you'll first need to create a database called nyc_housing in your local Postgres instance.
     engine = sqlalchemy.create_engine('postgresql://postgres:postgres@localhost:5432/nyc_housing')

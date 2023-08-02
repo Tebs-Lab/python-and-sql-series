@@ -9,7 +9,7 @@ with engine.connect() as connection:
 
     # execute a simple query
     query = 'SELECT * FROM sales.salesorderheader LIMIT 5;'
-    result_set = connection.execute(query)
+    result_set = connection.execute(sqlalchemy.text(query))
     
     # Print the results
     print('\n', query, "\n==============\n\n")
@@ -40,7 +40,7 @@ with engine.connect() as connection:
         limit 5;
     '''
      # execute a simple query
-    result_set = connection.execute(query)
+    result_set = connection.execute(sqlalchemy.text(query))
     
     # Print the results
     print('\n', query, "\n==============\n\n")

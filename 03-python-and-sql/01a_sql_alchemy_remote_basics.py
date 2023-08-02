@@ -2,7 +2,7 @@ import sqlalchemy
 
 # Connect with a "connection string" with a format of:
 # 'dbprotocol://user:password@address:port/database_name'
-connection_string = '' # Your instructor will send this to chat.
+connection_string = 'postgresql://student:v2_43ZkN_R54tGbgXimfQkgSd3qahCiW@db.bit.io:5432/teb/PracticalSQLWarmup' # Your instructor will send this to chat.
 engine = sqlalchemy.create_engine(connection_string)
 
 # Use the engine to establish a connection.
@@ -10,7 +10,7 @@ with engine.connect() as connection:
 
     # execute a simple query
     query = 'SELECT * FROM book LIMIT 5;'
-    result_set = connection.execute(query)
+    result_set = connection.execute(sqlalchemy.text(query))
     
     # Print the results
     print('\n', query, "\n==============\n\n")
@@ -27,7 +27,7 @@ with engine.connect() as connection:
           group by b.book_id
     '''
      # execute a simple query
-    result_set = connection.execute(query)
+    result_set = connection.execute(sqlalchemy.text(query))
     
     # Print the results
     print('\n', query, "\n==============\n\n")

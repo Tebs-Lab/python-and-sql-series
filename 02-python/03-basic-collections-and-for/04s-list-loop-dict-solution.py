@@ -40,16 +40,3 @@ dictionary_challenge['target'][0]['tricky'][2] = 'So long and thanks for all the
 
 from pprint import pprint
 pprint(dictionary_challenge)
-
-# Part 3
-words = [
-    'apple',
-    'soda',
-    'car',
-    'intrepid',
-    'water',
-    'buffalo',
-    'tepid',
-    'enemy',
-    'salvo'
-]

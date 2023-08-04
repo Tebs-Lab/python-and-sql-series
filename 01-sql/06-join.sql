@@ -1,10 +1,10 @@
 -- Working with the database we defined in the schema design basics, copied here for ease.
 -- The walkthrough starts on line 88.
-DROP TABLE author CASCADE;
-DROP TABLE book CASCADE;
-DROP TABLE book_author CASCADE;
-DROP TABLE review CASCADE;
-DROP TABLE review_username CASCADE;
+DROP TABLE IF EXISTS author CASCADE;
+DROP TABLE IF EXISTS book CASCADE;
+DROP TABLE IF EXISTS book_author CASCADE;
+DROP TABLE IF EXISTS review CASCADE;
+DROP TABLE IF EXISTS review_username CASCADE;
 
 CREATE TABLE author (
     author_id BIGSERIAL PRIMARY KEY,

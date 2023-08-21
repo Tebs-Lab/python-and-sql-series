@@ -139,7 +139,7 @@ JOIN book_fulltext ON book.book_id=book_fulltext.book_id
 * To fix this we have to make our schema a bit more complex, consider the new schema:
 
 ```sql
-DROP TABLE review_username;
+DROP TABLE book_fulltext;
 DROP TABLE review;
 DROP TABLE book;
 

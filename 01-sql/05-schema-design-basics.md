@@ -222,6 +222,24 @@ INSERT INTO review (book_id, rating, content) VALUES (4, 9, 'A remarkable story 
 INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 3, 'Too much evil in this book, don''t read it!');
 INSERT INTO review (book_id, rating, content) VALUES (5, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+
+CREATE TABLE book_fulltext (
+	book_id BIGINT PRIMARY KEY REFERENCES book(book_id),
+	fulltext TEXT
+);
+
+
+INSERT INTO book_fulltext VALUES (1, 'Pride and Prejudice: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (2, 'Sense and Sensibility: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (3, 'To Kill a Mockingbird: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (4, 'The Great Gatsby: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (5, 'One Hundred Years of Solitude: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (6, 'In Cold Blood: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (7, 'Brave New World: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (8, 'To The Lighthouse: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (9, 'Frankenstein: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (10, 'Beloved: PRETEND THIS IS A LOOOOOOT OF TEXT');
+INSERT INTO book_fulltext VALUES (11, 'Song of Solomon: PRETEND THIS IS A LOOOOOOT OF TEXT');
 ```
 
 * Now, we can join our books, authors, and users:

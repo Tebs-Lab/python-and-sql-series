@@ -7,7 +7,7 @@ Write queries that satisfy the following prompts:
 1. Select just the titles of all the books by Jane Austen.
 
 ```sql
-SELECT * FROM book WHERE author='Jane Austen';
+SELECT title FROM book WHERE author='Jane Austen';
 ```
 
 2. Select all the books whose price is larger than $7.00.
